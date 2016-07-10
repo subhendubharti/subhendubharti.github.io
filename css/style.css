@@ -2,31 +2,32 @@
     margin: 0;
     padding: 0;
 }
-body{
+#body{
     background: url("../images/main-bg.jpg");
+    background: rgba(1,1,1,1);
     background-size: cover;
 }
 header{
     background: linear-gradient(bottom,blue 0%,lightblue 50%, #f8f8f8 100%);
     background: -webkit-linear-gradient(bottom,blue 0%,lightblue 50%, white 100%);
     background: -moz-linear-gradient(bottom,blue 0%,lightblue 50%, white 100%);
-    text-align: center;d
+    text-align: center;
     font-size: 72px;
     color: #ccc;
 }
 .logo-image{
     height:100%;
-    width:90%;
-    margin: 5px;
+    width:100%;
+    margin:0;
 }
 .side-nav{
     position: fixed;
     height: 100%;
     background: #222222;
-    box-shadow: 3px 3px 10px white;
+    /*box-shadow: 3px 3px 10px white;
     -webkit-box-shadow: 3px 3px 10px white;
-    -moz-box-shadow: 3px 3px 10px white;
-    width: 16%;
+    -moz-box-shadow: 3px 3px 10px white;*/
+    width: 10%;
 }
 #display-area{
     position: fixed;
@@ -34,23 +35,23 @@ header{
     top: 0px;
     padding: 5px;
     max-width: 100%;  
-    width: 80%;
-    border: 3px solid white;
+    width: 90%;
+   /* border: 3px solid white;*/
     height: 100%;
-    margin-bottom: 10px;
-    margin-left: 3%;
-    left: 16%;
+   /* margin-bottom: 10px;
+    margin-left:3%;*/
+    left: 10%;
 }
-ul{
+.side-nav ul{
     list-style: none;
     display: inline-block;
-    background: url("../images/MyImage.jpg");
     background-size: cover;
     width: 100%;
 }
 li{
     display: block;
     /*text-align: center;*/
+    border-bottom: 1px solid #777777
     
 }
 .hidden{
@@ -59,30 +60,39 @@ li{
 .shown{
     display: block;
 }
+.zero-padding{
+    padding-left: 0px;
+    padding-right: 0px;
+}
 .content{
     position: relative;
-    border: 3px solid yellow;
+    height:100%;
+   /* border: 3px solid yellow;*/
+    vertical-align: middle;
 }
 .content p{
     color: bisque;
     margin: 0 auto;
-    font-size: 3em;;
     text-align: center;
     font-weight: bolder;
-    font-family: "Courgette", cursive;
+    font-family: "sans-serif", cursive;
+    vertical-align: middle;
     }
-nav ul li a{
+.side-nav ul li a{
     font-family: sans-serif;
     display: block;
     font-size: 1.5em;
     background: #111;
     text-decoration: none;
-    color: #f1f1f1;
-    box-shadow: 3px 3px 10px white;
+    color: #aaaaaa;
+   /* box-shadow: 3px 3px 10px white;
     -webkit-box-shadow: 3px 3px 10px white;
-    -moz-box-shadow: 3px 3px 10px white;
-    padding: 5% 15%;
+    -moz-box-shadow: 3px 3px 10px white;*/
+    padding: 3px 0;
     height: 100%;
+    text-align: center;
+    line-height: 1em;
+    
     
 }
 .list-item a:hover{
@@ -101,82 +111,171 @@ nav ul li a{
     padding: 1% 2%;
 }
 .article-content{
-    font-family: "Courgette", cursive;
+    font-family: "sans-serif";
 }
-
+.brand-name{
+    position: relative;
+    font-size:2.5em;
+    vertical-align: middle;
+    top: calc(40%);
+    line-height: 1;
+}
+.brand-name>.brand-desc{
+    font-family: "courgette",cursive;
+    font-size: .75em;
+    }
+.about-me{
+    position: relative;
+    top: 25px;
+    background: rgba(248,248,248,0.1);
+    min-height: 400px;
+    }
+.content ul li{
+    width:25%;
+    display:inline-block;
+    font-size: 1em;
+}
+.content ul li a{
+    width:100%;
+    
+}
 
 
 @media(max-width:1000px){
     nav ul li a{
         padding:5% 5%;
-        font-size: 1.5em;
+        font-size: 1em;
         }
+    .content ul li a {
+    font-size: 14px;
+}
     }
 @media(max-width:800px){
     nav ul li a{
-        padding:5% 2%;
-        font-size:1.2em;
+        padding:5% 0;
+        font-size:14px;
         }
+    .content ul li a {
+    font-size: 14px;
+}
     }
 @media(max-width:600px){
     nav ul li a{
         padding:0% 15%;
-        font-size: 2.7em;
+        font-size: 14px;
         }
-    .fa{
-        font-size: 2.7em;
+    .fa-2x{
+        font-size: 1.5em;
     }
     .hidden-in-small{
         display:none;
     }
+    .content ul li a {
+    font-size: 14px;
+}
 }
 @media(max-width:550px){
     nav ul li a{
         padding:0% 10%;
         font-size: 2.7em;
         }
-    .fa{
-        font-size: 2.7em;
+    .fa-2x{
+        font-size: 1.4em;
     }
     .hidden-in-small{
         display:none;
     }
+ .content ul li a{
+    display:inline-block;
+    font-size: 14px;
+     padding: 7px 5px;
+    
+}
 }
 @media(max-width:500px){
     nav ul li a{
         padding:0% 15%;
         font-size: 2.2em;
         }
-    .fa{
-        font-size: 2.2em;
+    .fa-2x{
+        font-size: 1.4em;
     }
     .hidden-in-small{
         display:none;
     }
+        .content ul li a{
+    display:inline-block;
+    font-size: 14px;
+    padding: 7px 2px;
 }
+    #link-to-skill{
+    width:20%;
+}
+#link-to-exp{
+    width:29%;
+}
+#link-to-edu{
+    width:26%;
+}
+
+    }
 @media(max-width:450px){
     nav ul li a{
         padding:0% 10%;
         font-size: 2em;
         }
-    .fa{
-        font-size: 2em;
+    .fa-2x{
+        font-size: 1.4em;
     }
     .hidden-in-small{
         display:none;
     }
+    
+     .content ul li a{
+    display:inline-block;
+    font-size: 14px;
+   padding: 7px 2px;
+}
+    #link-to-skill{
+    width:20%;
+}
+#link-to-exp{
+    width:29%;
+}
+#link-to-edu{
+    width:26%;
+}
+
 }
 @media(max-width:400px){
     nav ul li a{
-        padding:0% 15%;
-        font-size: 1.8em;
+        padding:10% 20%;
+        font-size: 3em;
         }
-    .fa{
-        font-size: 2em;
+    .fa-2x{
+        font-size: 1.4em;
     }
     .hidden-in-small{
         display:none;
     }
+    .brand-name{
+        top: calc(35%);
+    }
+    .content ul li a{
+    display:inline-block;
+    font-size: 14px;
+        padding: 7px 2px;
+   }
+    #link-to-skill{
+    width:20%;
+}
+#link-to-exp{
+    width:29%;
+}
+#link-to-edu{
+    width:26%;
+}
+
 }
 
 
