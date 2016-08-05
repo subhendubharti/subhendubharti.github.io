@@ -4,8 +4,10 @@
 }
 #body{
     background: url("../images/main-bg.jpg");
-    background: rgba(1,1,1,1);
+    background: rgba(00,34,51,1);
     background-size: cover;
+    overflow-y: scroll;
+    overflow-x: hidden;
  }
 header{
     background: linear-gradient(bottom,blue 0%,lightblue 50%, #f8f8f8 100%);
@@ -18,9 +20,14 @@ header{
 #top-nav {
     z-index: 100;
     display: none;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 40px;
+    font-size: 0.8em;
 }
 #top-nav *{
-    z-index: 100;
+    width: 100%;        
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -63,26 +70,21 @@ header{
     margin:0;
 }
 .side-nav{
+    top: 0px;
     position: fixed;
     height: 100%;
     background: #229988;
     /*box-shadow: 3px 3px 10px white;
     -webkit-box-shadow: 3px 3px 10px white;
     -moz-box-shadow: 3px 3px 10px white;*/
-    width: 10%;
+    width:70px;
 }
 #display-area{
-    position: fixed;
+    position:relative;
     color: darkgray;
-    top: 0;
-    padding: 5px;
-    max-width: 100%;  
-    width: 90%;
-   /* border: 3px solid white;*/
-    height: 100%;
-   /* margin-bottom: 10px;
-    margin-left:3%;*/
-    left: 10%;
+    width: 93%;  
+    margin-left:70px;
+    background: #002233;
   }
 .side-nav ul{
     list-style: none;
@@ -93,7 +95,7 @@ header{
 li{
     display: block;
     /*text-align: center;*/
-    border-bottom: 1px solid #777777
+    /*border-bottom: 1px solid #777777*/
     
 }
 .hidden{
@@ -109,9 +111,8 @@ li{
 .content{
     position: relative;
     height:100%;
-   /* border: 3px solid yellow;*/
     vertical-align: middle;
-    overflow-y: scroll;
+    margin: 0px;
        }
 .content p{
     color: bisque;
@@ -176,7 +177,7 @@ li{
     padding: 20px 30px;
     box-sizing: content-box;
     width: 60%;
-    background: rgba(30,30,30,1);
+    background: rgba(00,36,57,1);
     margin: 30px auto;
 }
 .about-tab-item{
@@ -184,7 +185,7 @@ li{
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
-    background: rgba(40,40,40,1);
+    background: rgba(5,45,65,1);
     z-index: 1;
     max-width: 600px;
     
@@ -192,13 +193,15 @@ li{
 .about-tab-item>div{
     display: inline-block;
     box-sizing: border-box;
-    padding: 10px 10px;
+    padding: 10px 5px;
     line-height: 1.5em;
 }
 .about-tab-item .tab-item-header{
-    font-size:25px;
+    font-size:1.2em;
+    font-weight: bold;
     display: inline-block;
-    width: 20%;
+    width: 18%;
+    text-align: center;
 }
 .about-tab-item .tab-item-detail{
     display: inline-block;
@@ -207,8 +210,10 @@ li{
     border-right: 1px solid rgba(50,50,50,1);
 }
 .about-tab-item .tab-item-score{
+    text-align: center;
+    font-size: 1em;
     display: inline-block;
-    width: 10%;
+    width: 12%;
 }
 
 #skills .tab-item-header,#experience .tab-item-header {
@@ -245,6 +250,7 @@ li{
                 background: #ddcccc;
                 transform: skew(-20deg) rotate(-20deg);
                 position: relative;
+                border: 1px solid #888888;
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                  -o-background-size: cover;
@@ -347,7 +353,8 @@ li{
 #display-area{
     width:100%;
     left:0;
-    margin-top:52px;
+    margin-top:40px;
+    margin-left:0px;
     }
 #top-nav{
     display:block;
@@ -356,11 +363,12 @@ li{
     font-size:32px;
     }
 .about-tab{
-    padding: 10px 5px;
+    padding: 10px 20px;
     box-sizing: content-box;
-    width: 95%;
-    background: rgba(30,30,30,1);
+    width: 80%;
+    margin:0 auto;
     margin: 15px auto;
+    text-align:center;
 }
 .about-tab-item>div{
     display:block;
@@ -369,7 +377,7 @@ li{
     line-height: 1.2em;
 }
 .about-tab-item .tab-item-header{
-    font-size:21px;
+    font-size:1em;
     display: inline-block;
     width: 100%;
 }
