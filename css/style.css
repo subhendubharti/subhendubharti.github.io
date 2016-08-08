@@ -8,6 +8,7 @@
     background-size: cover;
     overflow-y: scroll;
     overflow-x: hidden;
+    min-height: 700px;
  }
 header{
     background: linear-gradient(bottom,blue 0%,lightblue 50%, #f8f8f8 100%);
@@ -82,7 +83,7 @@ header{
 #display-area{
     position:relative;
     color: darkgray;
-    width: 93%;  
+    width: 94%;  
     margin-left:70px;
     background: #002233;
   }
@@ -113,6 +114,7 @@ li{
     height:100%;
     vertical-align: middle;
     margin: 0px;
+    min-height: 650px;
        }
 .content p{
     color: bisque;
@@ -157,7 +159,7 @@ li{
 }
 .brand-name{
     position: relative;
-    font-size:2.5em;
+    font-size:2em;
     vertical-align: middle;
     top: calc(40%);
     line-height: 1;
@@ -166,6 +168,15 @@ li{
     font-family: "courgette",cursive;
     font-size: .75em;
     }
+
+#home-wrapper{
+   font-size: 1.3em; 
+   padding-top: 75px;
+    padding-bottom: 75px;
+}
+#home-wrapper>p{
+    margin: 30px auto;
+}
 .about-me{
     position: relative;
     top: 25px;
@@ -241,6 +252,34 @@ li{
     margin: 10px 30px;
 }
 
+#book-wrapper{
+    width: 96%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 50px;
+}
+#book-image{
+    width: 80%;
+    margin-left: 4px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom:  50px;
+}
+#book-image>img{
+    width: 500px;
+       height: 600px;
+   }
+#book-description{
+    width: 80%;
+    height: 100%;
+      margin: 0 auto;
+      font-weight: normal;
+ }
+#book-description>p{
+       font-weight: normal;
+       text-align: justify;
+       padding: 5px;
+   }
 .box{
                 width: 300px;
                 height: 300px;
@@ -344,6 +383,48 @@ li{
 }
 #box8{
     
+}
+#contact-wrapper{
+    text-align: center;
+    font-weight: normal;
+    font-size: 1em;
+    padding: 50px 50px 50px 50px;
+    
+   }
+#contact-wrapper p {
+    font-weight: normal;
+    font-size: 1.3em;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+#social-widget>div{
+    width: 80px;
+    height:80px;
+    background: #f8f8f8;
+    border-radius: 50px;
+    color: rgba(00,34,51,1);
+    font-size: 25px;
+    padding-top: 14px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 25px;
+    z-index: 5;
+    box-shadow: 3px 3px #555555,-3px -3px #555555,3px -3px #555555,-3px 3px #555555 ;
+  }
+#social-widget>div>a{
+   text-decoration: none;
+   color: inherit;
+   }
+#social-widget>div:hover{
+    background: rgb(150, 33, 33);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+}
+#social-widget>div>i{
+    display: block;
+    margin: 0 auto;
 }
 
 @media(max-width:800px){
@@ -475,6 +556,21 @@ li{
   transform: scale(2);
     
 }
+#book-image{
+    width: 100%;
+    display: inline-block;
+}
+#book-image>img{
+    width: 100%;
+    height: 100%;
+}
+#book-description{
+    width: 100%;
+    height: 100%;
+      display: inline-block;
+      
+}
+
 }
 @media(max-width:400px){
   
