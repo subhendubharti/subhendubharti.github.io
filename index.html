@@ -8,7 +8,7 @@
     <link rel="SHORTCUT ICON" href="images/icon.jpg">
     <link rel=stylesheet href="css/style.css">
     <link rel="css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">--> 
     <link href='extras/fontawesome/css/font-awesome.css' rel='stylesheet'>
     
 </head>
@@ -35,7 +35,7 @@
           <!--  <li class="list-item">
                 <span class='close'>X</span>
             </li>-->
-            <li class="list-item logo-item">
+            <li class="list-item logo-item" data-show-content="home">
                 <div class="has-logo">
                     <img src="images/manu.jpg" class=logo-image alt="logo">
                 </div>
@@ -56,10 +56,16 @@
     </nav>
     <div id=display-area>
         <section id="home" class="content shown">
-
+            <div id="home-wrapper">
+            <p> Hello..<br>
+            I am</p>
             <p class="brand-name">SUBHENDU BHARTI
-                <br><span class='brand-desc'>writer.developer</span></p>
-        </section>
+                <br><span class='brand-desc'>a writer and developer</span></p>
+            <p>and</p>
+            <p>I'm glad that we have finally met.</p>
+                 <p>Browse the site to know more about me.</p>
+                </div>
+         </section>
         <section id="about" class="content hidden">
             
                                 <div class="about-tab" id="personal" role="tabpanel">
@@ -156,15 +162,15 @@
                 <div class="box-container">
                  <div class="box" id="box1"><img src="images/apps/randomquote.png" alt="randomquote">
                  <div class="projectName"><h1>Random Quotes</h1></div>
-            <div class="projectLink"><a href="http://subhendubharti.in/MyCalculator" target="_blank"><h2>View Live</h2></a></div>
+            <div class="projectLink"><a href="http://subhendubharti.in/RandomQuote" target="_blank"><h2>View Live</h2></a></div>
                  </div>
         <div class="box" id="box2"> <img src="images/apps/calculator.png" alt="calculator">
         <div class="projectName"><h1>Calculator</h1></div>
-            <div class="projectLink"><a href="http://subhendubharti.in/POMODROClock" target="_blank"><h2>View Live</h2></a></div>
+            <div class="projectLink"><a href="http://subhendubharti.in/MyCalculator" target="_blank"><h2>View Live</h2></a></div>
         </div>
         <div class="box" id="box3"><img src="images/apps/timer.png" alt="timer">
         <div class="projectName"><h1>Timer</h1></div>
-            <div class="projectLink"><a href="http://subhendubharti.in/RandomQuote" target="_blank"><h2>View Live</h2></a></div>
+            <div class="projectLink"><a href="http://subhendubharti.in/POMODROClock" target="_blank"><h2>View Live</h2></a></div>
         </div>
         <div class="box" id="box4"><img src="images/apps/weatherapp.png" alt="weatherapp">
         <div class="projectName"><h1>Weather App</h1></div>
@@ -191,15 +197,38 @@
 
         </section>
         <section id="book" class="content hidden">
-            <div>
-                <p class="section-title">book</p>
+            <p class="section-title">book</p>
+            <div id="book-wrapper">
+                <div id="book-description">
+                <p>
+                Something which I started doing to impress someone has now become my calling (or is highly likely to become). Yes I talk about poetry...
+Sometimes you strive hard to get something, but you never make up to it. And when out of disappointment, you give up on that thing, life suddenly bounces it back at you... Whether you like it or not, you have to accept it, because after all it was the thing you had tried hard for... This book shares a similar background... Otherwise it would have seen the world a year before.
+I request you to have a look at it not just because it is written by someone you know(calling myself a friend of yours would be too much), but because it is written by someone like you, someone who feels just the way you do and just the things you do,
+                 and you may find things close to you. It is jst that you didnt care to share them with the world. I believe every one has something or the other to share, to express or feels the need to be understood. And the means you choose to express totally depends on you. Some prefer painting, some singing, some dancing, I just happen to choose poetry...
+           </p>
+                     </div>
+            
+                <div id="book-image"><!-- <div class="back Face">
+                <img src="images/bookback.jpg" alt="back"></div>-->
+                    <img src="images/bookcover.png" alt="cover" style="float: left">
+            
+            </div>
             </div>
         </section>
         <section id="contact" class="content hidden">
-            <div>
-                <p class="section-title">contact</p>
-            </div>
-
+            <p class="section-title">Contact</p>
+            <div id="contact-wrapper">
+            <p>Now that you know me well enough.. Give me a chance to know you too.. <br/> Connect with me..</p>
+                <p> Email : subhendublog@gmail.com</p>
+                <div id="social-widget">
+              <div><a href="https://www.facebook.com/subhenduishere"> <i class="fa fa-2x fa-facebook fa-fw"></i></a></div>
+               <div><a href="https://www.linkedin.com/in/subhendubharti"> <i class="fa fa-2x fa-linkedin fa-fw"></i></a></div>
+               <div><a href="https://twitter.com/sbsubhendu"> <i class="fa fa-2x fa-twitter fa-fw"></i></a></div>
+               <div><a href="https://www.github.com/subhendubharti"> <i class="fa fa-2x fa-github fa-fw"></i></p></a></div>
+                    </div>
+             </div>
+            
+            
         </section>
     </div>
    <script src="js/script.js"></script>
