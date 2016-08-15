@@ -40,5 +40,4 @@ var elem=document.getElementsByClassName("list-item");
             //alert(elem[i]);
         }
 //alert("show");
-  function activateProject() {                alert(event.which);            }
-}
+ }
