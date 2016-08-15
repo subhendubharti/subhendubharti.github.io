@@ -7,25 +7,27 @@
     <meta name=viewport content="width=device-width,initial-scale=1.0">
     <link rel="SHORTCUT ICON" href="images/icon.jpg">
     <link rel=stylesheet href="css/style.css">
-    <link rel="css/bootstrap.min.css">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">--> 
+   <!-- <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">--> 
     <link href='extras/fontawesome/css/font-awesome.css' rel='stylesheet'>
+      <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <![endif]-->
     
 </head>
 
-<body id="body" onkeyup="alert(event.which);">
+<body id="body">
     <nav id="top-nav">
             <ul>
               <li class=list-item data-show-content="home"><a href="#home"><i class="fa fa-2x fa-home fa-fw"></i><br/>
-                    <span class="hidden-in-small">Home</span></a></li>
-            <li class=list-item data-show-content="about"><a href="#about"><i class="fa fa-2x fa-user-secret fa-fw"></i><br/><span class="hidden-in-small">About</span></a>
+                   Home</a></li>
+            <li class=list-item data-show-content="about"><a href="#about"><i class="fa fa-2x fa-user-secret fa-fw"></i><br/>About</a>
             </li>
-            <li class=list-item data-show-content="projects"><a href="#projects"><i class="fa  fa-2x fa-code fa-fw"></i><br/><span class="hidden-in-small">Projects</span></a>
+            <li class=list-item data-show-content="projects"><a href="#projects"><i class="fa  fa-2x fa-code fa-fw"></i><br/>Projects</a>
             </li>
             <li class=list-item data-show-content="book"><a href="#book"><i class="fa fa-2x  fa-book fa-fw"></i><br/>
-                    <span class="hidden-in-small">Book</span></a>
+                   Book</a>
             </li>
-            <li class=list-item data-show-content="contact"><a href="#contact"><i class="fa fa-2x fa-envelope fa-fw"></i><br/><span class="hidden-in-small">Contact</span></a>
+            <li class=list-item data-show-content="contact"><a href="#contact"><i class="fa fa-2x fa-envelope fa-fw"></i><br/>Contact</a>
             </li>
             </ul>
         </nav>
@@ -70,42 +72,81 @@
             
                                 <div class="about-tab" id="personal" role="tabpanel">
                                     <p class="about-tab-header">Personal</p>
+                                     <div class="about-tab-item">
+                                        <div class="tab-item-header">Me</div>
+                                        <div class="tab-item-detail">
+                                            <table>
+                                                <tbody><tr><td>D.O.B</td><td>June 24,1993</td></tr>
+                                                    <tr><td>Languages</td><td>English,  Hindi , French</td></tr>
+                                                   </tbody>
+                                            </table>
+                                        
+                                        </div>
+                                      
+                                    </div>
+                                     <div class="about-tab-item">
+                                        <div class="tab-item-header">Extra curriculars</div>
+                                        <div class="tab-item-detail">
+                                            <table>
+                                             <tbody><tr><td>Songs</td><td>Hindi, English</td></tr>
+                                                    <tr><td>Reading</td><td>Literature, Philosophy, Motivational</td></tr>
+                                                    <tr><td>Writing</td><td>Poetry, Academic</td></tr>
+                                                    <tr><td>TV</td><td><ul><li>The Originals</li> <li>The Vampire Diaries</li><li> Game Of Thrones</li><li> Person Of Ineterst</li><li> Prison Break</li></ul></td></tr>
+                                                   <tr><td>Others</td><td><ul><li>Learning new languages</li> <li>Conversation with new people</li><li>Visiting places</li></ul></td></tr>
+                                                </tbody>
+                                            </table>
+                                         </div>
+                                    
+                                    </div>
+                                     <div class="about-tab-item">
+                                        <div class="tab-item-header">Achievements</div>
+                                        <div class="tab-item-detail">
+                                             <table>
+                                                <tbody><tr><td>2nd prize in All Odisha Literary competition</td></tr>
+                                                    <tr><td>3rd in JavaAce 2014, Odisha</td></tr>
+                                                     <tr><td>Played volleyball at State level</td></tr>
+                                                   </tbody>
+                                            </table>
+                                        </ul>
+                                        </div>
+                                  
+                                    </div>
                                     
                                 </div>
 
                                 <div class="about-tab" id="education" role="tabpanel">
                                     <p class="about-tab-header">Education</p>
                                     <div class="about-tab-item">
-                                        <div class="tab-item-header"><h1>10th</h1></div>
-                                        <div class="tab-item-detail"><h3>St Thomas School</h3><h4>2009</h4></div>
-                                        <div class="tab-item-score"><h1>89.43</h1></div>
+                                        <div class="tab-item-header"><h2>10th</h2></div>
+                                        <div class="tab-item-detail"><h3>St Thomas School</h3><h4 class="desc">2009</h4></div>
+                                        <div class="tab-item-score"><h3>89.43</h3></div>
                                     </div>
                                     <div class="about-tab-item">
-                                        <div class="tab-item-header"><h1>12th</h1></div>
-                                        <div class="tab-item-detail"><h3>St Xaviers College</h3><h4>Science.2011</h4></div>
-                                        <div class="tab-item-score"><h1>76.80</h1></div>
+                                        <div class="tab-item-header"><h2>12th</h2></div>
+                                        <div class="tab-item-detail"><h3>St Xaviers College</h3><h4 class="desc">Science.2011</h4></div>
+                                        <div class="tab-item-score"><h3>76.80</h3></div>
                                     </div>
                                     <div class="about-tab-item">
-                                        <div class="tab-item-header"><h1>BTech</h1></div>
-                                        <div class="tab-item-detail"><h3>C V Raman College Of Engineering</h3><h4>Computer Science and Engineering. 2015</h4></div>
-                                        <div class="tab-item-score"><h1>8.62</h1></div>
+                                        <div class="tab-item-header"><h2>BTech</h2></div>
+                                        <div class="tab-item-detail"><h3>C V Raman College Of Engineering</h3><h4 class="desc">Computer Science and Engineering. 2015</h4></div>
+                                        <div class="tab-item-score"><h3>8.62</h3></div>
                                     </div>
                                 </div>
                                 <div class="about-tab" id="skills" role="tabpanel">
                                     <p class="about-tab-header">Skills</p>
                                     <div class="about-tab-item">
                                         <div class="tab-item-header">Front End Technologies</div>
-                                        <div class="tab-item-detail"><img src="images/frontend.png" alt="front-end" style="width: 100%;height: 140px;"></div>
+                                        <div class="tab-item-detail"><img src="images/frontend.png" alt="front-end" style="width: 100%;height: 100px;"></div>
                                         <div class="tab-item-score">Skill level: Advanced</div>
                                     </div>
                                      <div class="about-tab-item">
                                         <div class="tab-item-header">Back End Technologies</div>
-                                        <div class="tab-item-detail"><img src="images/backend.png" alt="backend" style="width: 100%;height: 140px;"></div>
+                                        <div class="tab-item-detail"><img src="images/backend.png" alt="backend" style="width: 100%;height: 100px;"></div>
                                         <div class="tab-item-score">Skill level: Advanced</div>
                                     </div>
                                      <div class="about-tab-item">
                                         <div class="tab-item-header">Data Analytics</div>
-                                        <div class="tab-item-detail"><img src="images/tableau.png" alt="tableau" style="width: 100%;height: 140px;"></div>
+                                        <div class="tab-item-detail"><img src="images/tableau.png" alt="tableau" style="width: 100%;height: 100px;"></div>
                                         <div class="tab-item-score">Skill level: Advanced</div>
                                     </div>
                                                                   
@@ -118,9 +159,9 @@
                                         <div class="tab-item-detail"><h3>Work:</h3>
                                         <ul style="list-style-type: none;">
                                             <li>Application developmnet using .NET MVC, SQL Server, Entity Framework</li>
-                                            <li>Front end development using HTML5,CSS3,Javascript, Bootstrap,AngularJS </li>
+                                            <li>Front end development using HTML5, CSS3, Javascript, Bootstrap, AngularJS </li>
                                             <li>Dashboard development using Tableau</li>
-                                            <li>Database design and developemnt using SQL Server</li>
+                                            <li>Database design and development using SQL Server</li>
                                         </ul>
                                         </div>
                                         <div class="tab-item-score">May 2015 - present</div>
@@ -129,7 +170,7 @@
                                        <div class="tab-item-header">Freelancer</div>
                                         <div class="tab-item-detail"><h3>Work:</h3>
                                         <ul style="list-style-type: none;">
-                                            <li>Web developemnt</li>
+                                            <li>Web development</li>
                                             <li>Programming using C, C++, Java, C#</li>
                                             <li>Creative writing</li>
                                         </ul>
@@ -137,23 +178,7 @@
                                         <div class="tab-item-score">December 2015 - present</div>
                                     </div>
                                 </div>
-             <div class="about-tab" id="falseexperience" role="tabpanel">
-                                    <p class="about-tab-header"></p>
-                                    <div class="about-tab-item">
-                                        <div class="tab-item-header"></div>
-                                        <div class="tab-item-detail"><h3></h3>
-                                        
-                                        </div>
-                                        <div class="tab-item-score"></div>
-                                    </div>
-                                    <div class="about-tab-item">
-                                       <div class="tab-item-header"></div>
-                                        <div class="tab-item-detail"><h3></h3>
-                                        
-                                        </div>
-                                        <div class="tab-item-score"></div>
-                                    </div>
-                                </div>
+          
                            
         </section>
         <section id="projects" class="content hidden">
@@ -201,16 +226,15 @@
             <div id="book-wrapper">
                 <div id="book-description">
                 <p>
-                Something which I started doing to impress someone has now become my calling (or is highly likely to become). Yes I talk about poetry...
-Sometimes you strive hard to get something, but you never make up to it. And when out of disappointment, you give up on that thing, life suddenly bounces it back at you... Whether you like it or not, you have to accept it, because after all it was the thing you had tried hard for... This book shares a similar background... Otherwise it would have seen the world a year before.
+              Sometimes you strive hard to get something, but you never make up to it. And when out of disappointment, you give up on that thing, life suddenly bounces it back at you... Whether you like it or not, you have to accept it, because after all it was the thing you had tried hard for... This book shares a similar background... Otherwise it would have seen the world a year before.
 I request you to have a look at it not just because it is written by someone you know(calling myself a friend of yours would be too much), but because it is written by someone like you, someone who feels just the way you do and just the things you do,
-                 and you may find things close to you. It is jst that you didnt care to share them with the world. I believe every one has something or the other to share, to express or feels the need to be understood. And the means you choose to express totally depends on you. Some prefer painting, some singing, some dancing, I just happen to choose poetry...
+                 and you may find things close to you. It is just that you didnt care to share them with the world. I believe every one has something or the other to share, to express or feels the need to be understood. And the means you choose to express totally depends on you. Some prefer painting, some singing, some dancing, I just happen to choose poetry...
            </p>
                      </div>
             
                 <div id="book-image"><!-- <div class="back Face">
                 <img src="images/bookback.jpg" alt="back"></div>-->
-                    <img src="images/bookcover.png" alt="cover" style="float: left">
+                    <img src="images/bookcover.png" alt="cover">
             
             </div>
             </div>
@@ -227,10 +251,10 @@ I request you to have a look at it not just because it is written by someone you
                <div><a href="https://www.github.com/subhendubharti"> <i class="fa fa-2x fa-github fa-fw"></i></p></a></div>
                     </div>
              </div>
-            
-            
+                 
         </section>
     </div>
+ 
    <script src="js/script.js"></script>
 </body>
 
